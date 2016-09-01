@@ -24,7 +24,7 @@ export class ClassesRouter extends PromiseRouter {
       options.skip = Number(body.skip);
     }
     if (body.limit || body.limit === 0) {
-      options.limit = Number(body.limit);
+      options.limit = Number(500);
     } else {
       options.limit = Number(500);
     }
